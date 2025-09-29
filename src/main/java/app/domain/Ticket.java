@@ -17,6 +17,12 @@ public class Ticket {
         return id;
     }
 
+    public Ticket(double price, Genre genre, String titleMovie) {
+        this.genre = genre;
+        this.price = price;
+        this.titleMovie = titleMovie;
+    }
+
     public void setPrice(double price) {
         this.price = price;
     }
