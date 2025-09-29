@@ -32,7 +32,7 @@ public class TicketService {
         }
         String title = ticket.getTitleMovie();
         if (title == null || title.trim().isEmpty()) {
-            throw new TicketSaveException("Наименование фильма не может быть пустым");
+            throw new TicketSaveException("Наиминование фильма не может быть пустым");
         }
         if (ticket.getPrice() < 0) {
             throw new TicketSaveException("Цена билета не должна быть отрицательной");
@@ -113,5 +113,6 @@ public class TicketService {
                 .filter(x -> x.getGenre().equals(genre))
                 .toList();
     }
+
 
 }
