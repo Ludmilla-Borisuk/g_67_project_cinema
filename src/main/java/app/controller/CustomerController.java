@@ -42,7 +42,7 @@ public class CustomerController {
         service.restoreById(numericId);
     }
 
-    public int getCustomerNumber() {
+    public int getCustomersNumber() {
         return service.getActiveCustomersNumber();
     }
 

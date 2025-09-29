@@ -10,12 +10,16 @@ public class Customer {
     private boolean active;
     private List<Ticket> cart = new ArrayList<>();
 
+    public Customer(String name) {
+        this.name = name;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setActive(boolean active) {
@@ -30,8 +34,8 @@ public class Customer {
         return active;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     @Override
